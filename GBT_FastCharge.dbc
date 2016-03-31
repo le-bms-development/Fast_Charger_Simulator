@@ -36,6 +36,9 @@ BS_:
 BU_: CPD Charger
 
 
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ SPN3513_Chg_Stop_Fault_Happen : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
 BO_ 2550658134 CTS: 7 Charger
  SG_ SPN2823_Time_Sync_Year : 40|16@1+ (1,0) [0|3000] ""  CPD
  SG_ SPN2823_Time_Sync_Month : 32|8@1+ (1,0) [0|12] ""  CPD
@@ -45,6 +48,7 @@ BO_ 2550658134 CTS: 7 Charger
  SG_ SPN2823_Time_Sync_Second : 0|8@1+ (1,0) [0|59] ""  CPD
 
 BO_ 2417685590 CST: 4 Charger
+ SG_ SPN3521_Chg_Stop_Fault_Stop : 4|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ SPN3523_Chg_Stop_Volt_Ab_Fault : 26|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3523_Chg_Stop_Curr_Ab_Fault : 24|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3522_Chg_Stop_Other_Fault : 18|2@1+ (1,0) [0|3] ""  CPD
@@ -54,7 +58,6 @@ BO_ 2417685590 CST: 4 Charger
  SG_ SPN3522_Chg_Stop_Conn_Fault : 10|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3522_Chg_Stop_Temp_Fault : 8|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3521_Chg_Stop_BMS_Stop : 6|2@1+ (1,0) [0|3] ""  CPD
- SG_ SPN3513_Chg_Stop_Fault_Happen : 4|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3521_Chg_Stop_Manual_Stop : 2|2@1+ (1,0) [0|3] ""  CPD
  SG_ SPN3521_Chg_Stop_Condition_Met : 0|2@1+ (1,0) [0|3] ""  CPD
 
@@ -177,6 +180,7 @@ BO_ 2617399028 BRM: 41 CPD
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
 BA_DEF_ SG_  "GenSigEVName" STRING ;
 BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";

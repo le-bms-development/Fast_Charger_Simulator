@@ -1,0 +1,297 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: CPD Charger
+
+
+BO_ 2550658134 CTS: 7 Charger
+ SG_ SPN2823_Time_Sync_Year : 40|16@1+ (1,0) [0|3000] ""  CPD
+ SG_ SPN2823_Time_Sync_Month : 32|8@1+ (1,0) [0|12] ""  CPD
+ SG_ SPN2823_Time_Sync_Day : 24|8@1+ (1,0) [0|31] ""  CPD
+ SG_ SPN2823_Time_Sync_Hour : 16|8@1+ (1,0) [0|23] ""  CPD
+ SG_ SPN2823_Time_Sync_Minute : 8|8@1+ (1,0) [0|59] ""  CPD
+ SG_ SPN2823_Time_Sync_Second : 0|8@1+ (1,0) [0|59] ""  CPD
+
+BO_ 2417685590 CST: 4 Charger
+ SG_ SPN3523_Chg_Stop_Volt_Ab_Fault : 26|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3523_Chg_Stop_Curr_Ab_Fault : 24|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Other_Fault : 18|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Urge_Stop_Fault : 16|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Transfer_Fault : 14|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Int_Temp_Fault : 12|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Conn_Fault : 10|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3522_Chg_Stop_Temp_Fault : 8|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3521_Chg_Stop_BMS_Stop : 6|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3513_Chg_Stop_Fault_Happen : 4|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3521_Chg_Stop_Manual_Stop : 2|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3521_Chg_Stop_Condition_Met : 0|2@1+ (1,0) [0|3] ""  CPD
+
+BO_ 2552099926 CSD: 8 Charger
+ SG_ SPN3613_Charger_Num : 32|32@1+ (1,1) [1|4294967296] ""  CPD
+ SG_ SPN3612_Output_Energy : 16|16@1+ (0.1,0) [0|1000] "kWh"  CPD
+ SG_ SPN3611_Cumulated_Chg_Time : 0|16@1+ (1,0) [0|600] "min"  CPD
+
+BO_ 2416637014 CRO: 1 Charger
+ SG_ SPN2830_Charger_Ready_Status : 0|8@1+ (1,0) [0|255] ""  CPD
+
+BO_ 2550264918 CRM: 8 Charger
+ SG_ SPN2562_Charger_Position : 40|24@1+ (1,0) [0|16777215] ""  CPD
+ SG_ SPN2561_No_Charger_Plug : 8|32@1+ (1,0) [0|4294967295] ""  CPD
+ SG_ SPN2560_Charger_No : 0|8@1+ (1,0) [0|255] ""  CPD
+
+BO_ 2550723670 CML: 8 Charger
+ SG_ SPN2827_Min_Output_Curr : 48|16@1+ (0.1,-400) [-400|400] "A"  CPD
+ SG_ SPN2826_Max_Output_Curr : 32|16@1+ (1,-400) [-400|400] "A"  CPD
+ SG_ SPN2825_Min_Output_Volt : 16|16@1+ (0.1,0) [0|1000] "V"  CPD
+ SG_ SPN2824_Max_Output_Volt : 0|16@1+ (0.1,0) [0|1000] "V"  CPD
+
+BO_ 2552689750 CHM: 3 Charger
+ SG_ SPN2600_Protocol_Version : 0|24@1+ (1,0) [0|16777215] ""  CPD
+
+BO_ 2283795542 CEM: 4 Charger
+ SG_ SPN3927_Receive_BSD_Timeout : 24|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3926_Receive_BST_Timeout : 20|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3925_Receive_BCL_Timeout : 18|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3924_Receive_BCS_Timeout : 16|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3923_Receive_BRO_Timeout : 10|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3922_Receive_BCP_Timeout : 8|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3921_Receive_BRM__Timeout : 0|2@1+ (1,0) [0|3] ""  CPD
+
+BO_ 2551379030 CCS: 8 Charger
+ SG_ SPN3929_Chg_Permit : 48|2@1+ (1,0) [0|3] ""  CPD
+ SG_ SPN3083_Cumulated_Chg_Time : 32|16@1+ (1,0) [0|600] "min"  CPD
+ SG_ SPN3082_Charger_Output_Curr : 16|16@1+ (0.1,-400) [-400|400] "A"  CPD
+ SG_ SPN3081_Chrager_Output_Volt : 0|16@1+ (0.1,0) [0|1000] "V"  CPD
+
+BO_ 2417579764 BST: 4 CPD
+ SG_ SPN3512_BMS_Stop_Other_Fault : 22|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3513_BMS_Stop_Volt_Over_Fault : 26|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3513_BMS_Stop_Curr_Over_Fault : 24|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Chk_2Volt_Fault : 20|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_HV_Cont_Fault : 18|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Pack_Temp_Fault : 16|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Chg_Conn_Fault : 14|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Comp_Temp_Fault : 12|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Conn_Temp_Fault : 10|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3512_BMS_Stop_Iso_Fault : 8|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3511_BMS_Stop_Initiative : 6|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3511_BMS_Stop_Cell_V_Achieve : 4|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3511_BMS_Stop_Volt_Achieve : 2|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3511_BMS_Stop_SOC_Achieve : 0|2@1+ (1,0) [0|3] ""  Charger
+
+BO_ 2551404276 BSM: 7 CPD
+ SG_ SPN3096_Chg_Permit : 52|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3095_Pack_HV_Connector_Status : 50|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3094_Pack_Isolation_Status : 48|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3093_Pack_Temp_Over_High_Low : 46|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3092_Pack_Currt_Over_High_Low : 44|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3091_Pack_SOC_Over_High_Low : 42|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3090_Cell_Volt_Over_High_Low : 40|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3089_Max_Temp_Cell_No : 32|8@1+ (1,1) [1|128] ""  Charger
+ SG_ SPN3088_Min_Cell_Temp : 24|8@1+ (1,-50) [-50|200] "Deg"  Charger
+ SG_ SPN3087_Max_Temp_Cell_No : 16|8@1+ (1,1) [1|128] ""  Charger
+ SG_ SPN3086_Max_Cell_Temp : 8|8@1+ (1,-50) [-50|200] "Deg"  Charger
+ SG_ SPN3085_Max_Volt_Cell_No : 0|8@1+ (1,1) [1|256] ""  Charger
+
+BO_ 2551994100 BSD: 7 CPD
+ SG_ SPN3605_Max_Cell_Temp : 48|8@1+ (1,-50) [-50|205] "Deg"  Charger
+ SG_ SPN3604_Min_Cell_Temp : 40|8@1+ (1,-50) [-50|200] "Deg"  Charger
+ SG_ SPN3603_Max_Cell_Volt : 24|16@1+ (0.01,0) [0|24] "V"  Charger
+ SG_ SPN3602_Min_Cell_Volt : 8|16@1+ (0.01,0) [0|24] "V"  Charger
+ SG_ SPN3601_Final_Pack_SOC : 0|8@1+ (1,0) [0|100] "%"  Charger
+
+BO_ 2416531188 BRO: 1 CPD
+ SG_ SPN2829_BMS_Ready_Status : 0|8@1+ (1,0) [0|255] ""  Charger
+
+BO_ 2552714996 BHM: 2 CPD
+ SG_ SPN2601_Max_Allow_Voltage : 0|16@1+ (0.1,0) [0|1000] "V"  Charger
+
+BO_ 2283689716 BEM: 4 CPD
+ SG_ SPN3907_Receive_CSD_Timeout : 24|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3906_Receive_CST_Timeout : 18|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3905_Receive_CCS_Timeout : 16|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3904_Receive_CRO_Timeout : 10|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3903_Receive_CML_Timeout : 8|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3902_Receive_CRM_AA_Timeout : 2|2@1+ (1,0) [0|3] ""  Charger
+ SG_ SPN3901_Receive_CRM_00_Timeout : 0|2@1+ (1,0) [0|3] ""  Charger
+
+BO_ 2618382068 BCS: 9 CPD
+ SG_ SPN3079_Estimated_Chg_Time : 56|16@1+ (1,0) [0|600] "min"  Charger
+ SG_ SPN3078_Current_SOC : 48|8@1+ (1,0) [0|100] "%"  Charger
+ SG_ SPN3077_Max_Volt_Module_No : 44|4@1+ (1,0) [0|15] ""  Charger
+ SG_ SPN3077_Max_Module_Volt : 32|12@1+ (0.01,0) [0|24] "V"  Charger
+ SG_ SPN3076_Chg_Curr_Measurement : 16|16@1+ (0.1,-400) [-400|400] "A"  Charger
+ SG_ SPN3075_Chg_Volt_Measurtement : 0|16@1+ (0.1,0) [0|1000] "V"  Charger
+
+BO_ 2617661172 BCP: 13 CPD
+ SG_ SPN2819_Max_Allow_Chg_Volt : 48|16@1+ (0.1,0) [0|1000] "V"  Charger
+ SG_ SPN2822_Battery_Pack_Volt : 88|16@1+ (0.1,0) [0|1000] "V"  Charger
+ SG_ SPN2821_Battery_Pack_SOC : 72|16@1+ (0.1,0) [0|100] "%"  Charger
+ SG_ SPN2820_Max_Allow_Temp : 64|8@1+ (1,-50) [-50|200] "Deg"  Charger
+ SG_ SPN2818_Battery_Pack_Capacity : 32|16@1+ (0.1,0) [0|1000] "kWh"  Charger
+ SG_ SPN2817_Max_Allow_Chg_Curr : 16|16@1+ (0.1,-400) [-400|400] "A"  Charger
+ SG_ SPN2816_Max_Allow_Cell_Chg_Volt : 0|16@1+ (0.01,0) [0|24] "V"  Charger
+
+BO_ 2551207668 BCL: 5 CPD
+ SG_ SPN3074_Charge_Mode : 32|8@1+ (1,0) [0|255] ""  Charger
+ SG_ SPN3073_Required_Curr : 16|16@1+ (0.1,-400) [-400|400] "A"  Charger
+ SG_ SPN3072_Required_Volt : 0|16@1+ (0.1,0) [0|800] "V"  Charger
+
+BO_ 2617399028 BRM: 41 CPD
+ SG_ SPN2568_Rated_Voltage : 48|16@1+ (0.1,0) [0|1000] "V"  Charger
+ SG_ SPN2567_Rated_Capacity : 32|16@1+ (0.1,0) [0|1000] "Ah"  Charger
+ SG_ SPN2566_Battery_Type : 24|8@1+ (1,0) [0|255] ""  Charger
+ SG_ SPN2565_Version : 0|24@1+ (1,0) [0|16777215] ""  Charger
+
+
+
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "BusType" "CAN";
+BA_ "DBName" "GBT_FastCharge";
+BA_ "NmStationAddress" BU_ CPD 244;
+BA_ "NmStationAddress" BU_ Charger 86;
+BA_ "GenMsgCycleTime" BO_ 2550658134 500;
+BA_ "VFrameFormat" BO_ 2550658134 3;
+BA_ "GenMsgCycleTime" BO_ 2417685590 10;
+BA_ "VFrameFormat" BO_ 2417685590 3;
+BA_ "GenMsgCycleTime" BO_ 2552099926 250;
+BA_ "VFrameFormat" BO_ 2552099926 3;
+BA_ "GenMsgCycleTime" BO_ 2416637014 250;
+BA_ "VFrameFormat" BO_ 2416637014 3;
+BA_ "GenMsgCycleTime" BO_ 2550264918 250;
+BA_ "VFrameFormat" BO_ 2550264918 3;
+BA_ "GenMsgCycleTime" BO_ 2550723670 250;
+BA_ "VFrameFormat" BO_ 2550723670 3;
+BA_ "GenMsgCycleTime" BO_ 2552689750 250;
+BA_ "VFrameFormat" BO_ 2552689750 3;
+BA_ "GenMsgCycleTime" BO_ 2283795542 250;
+BA_ "VFrameFormat" BO_ 2283795542 3;
+BA_ "GenMsgCycleTime" BO_ 2551379030 50;
+BA_ "VFrameFormat" BO_ 2551379030 3;
+BA_ "GenMsgCycleTime" BO_ 2417579764 10;
+BA_ "VFrameFormat" BO_ 2417579764 3;
+BA_ "GenMsgCycleTime" BO_ 2551404276 250;
+BA_ "VFrameFormat" BO_ 2551404276 3;
+BA_ "GenMsgCycleTime" BO_ 2551994100 250;
+BA_ "VFrameFormat" BO_ 2551994100 3;
+BA_ "GenMsgCycleTime" BO_ 2416531188 250;
+BA_ "VFrameFormat" BO_ 2416531188 3;
+BA_ "GenMsgCycleTime" BO_ 2552714996 250;
+BA_ "VFrameFormat" BO_ 2552714996 3;
+BA_ "GenMsgCycleTime" BO_ 2283689716 250;
+BA_ "VFrameFormat" BO_ 2283689716 3;
+BA_ "GenMsgCycleTime" BO_ 2618382068 250;
+BA_ "VFrameFormat" BO_ 2618382068 3;
+BA_ "GenMsgCycleTime" BO_ 2617661172 500;
+BA_ "VFrameFormat" BO_ 2617661172 3;
+BA_ "GenMsgCycleTime" BO_ 2551207668 50;
+BA_ "VFrameFormat" BO_ 2551207668 3;
+BA_ "GenMsgCycleTime" BO_ 2617399028 250;
+BA_ "VFrameFormat" BO_ 2617399028 3;
+BA_ "GenSigStartValue" SG_ 2550723670 SPN2827_Min_Output_Curr 4000;
+BA_ "GenSigStartValue" SG_ 2550723670 SPN2826_Max_Output_Curr 400;
+BA_ "GenSigStartValue" SG_ 2551379030 SPN3082_Charger_Output_Curr 4000;
+BA_ "GenSigStartValue" SG_ 2551404276 SPN3088_Min_Cell_Temp 50;
+BA_ "GenSigStartValue" SG_ 2551404276 SPN3086_Max_Cell_Temp 50;
+BA_ "GenSigStartValue" SG_ 2551994100 SPN3605_Max_Cell_Temp 50;
+BA_ "GenSigStartValue" SG_ 2551994100 SPN3604_Min_Cell_Temp 50;
+BA_ "GenSigStartValue" SG_ 2618382068 SPN3076_Chg_Curr_Measurement 4000;
+BA_ "GenSigStartValue" SG_ 2617661172 SPN2820_Max_Allow_Temp 50;
+BA_ "GenSigStartValue" SG_ 2617661172 SPN2817_Max_Allow_Chg_Curr 4000;
+BA_ "GenSigStartValue" SG_ 2551207668 SPN3073_Required_Curr 4000;
+
